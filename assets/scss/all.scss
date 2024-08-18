@@ -1,0 +1,37 @@
+
+// bootstrap
+@import "bootstrap/scss/functions";
+@import './utils/variables';
+@import './helper/variables';  //custom
+@import "bootstrap/scss/bootstrap";
+@import './utils/utilities';
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+// swiper
+// @import 'swiper/css/bundle';
+
+// base
+@import './base/base';
+
+// components
+@import './components/custom-btn';
+@import './components/theme-card';
+@import './components/slide-button';
+
+// layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/banner.scss';
+
+// pages
+@import './pages/index.scss';
+@import './pages/blog.scss';
+@import './pages/login.scss';
+@import './pages/about.scss';
+@import './pages/subscribe.scss';
+@import './pages/checkout.scss';
+@import './pages/success.scss';
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}

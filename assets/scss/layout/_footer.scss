@@ -1,0 +1,13 @@
+.footer {
+    border-top: $gray-500 solid 1px;
+
+    @include media-breakpoint-up(lg) {
+        border-top: $gray-500 solid 0px;
+    }
+
+    .container {
+        @include media-breakpoint-up(lg) {
+            border-top: $gray-500 solid 1px;
+        }
+    }
+}

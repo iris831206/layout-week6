@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+        <section class="login">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="card border-neutral-200 bg-white">
+                            <h4 class="text-primary mb-4 mb-lg-5">登入</h4>
+                            <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="inputAccount" class="form-label fw-bold mb-2">會員帳號</label>
+                                <input type="text" class="form-control" id="inputAccount"
+                                    placeholder="請輸入會員帳號">
+                            </div>
+                            <div class="mb-4 mb-lg-5">
+                                <label for="inputPassword" class="form-label fw-bold mb-2">會員密碼</label>
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="請輸入密碼">
+                            </div>
+                        </form>
+                            <button type="submit" class="btn btn-primary text-white w-100 mb-5">
+                                立即登入<i class="bi bi-arrow-right ms-2"></i>
+                            </button>
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="line"></div>
+                                <p
+                                    class="text-neutral-300 fw-semibold mb-4 mb-lg-5 text-center text-nowrap translate-middle-y mx-3">
+                                    或以其他方式登入</p>
+                                <div class="line"></div>
+                            </div>
+
+                            <button type="button" class="btn bg-neutral-100 w-100 mb-2">
+                                <img src="../assets/images/icons-google.png">
+                                使用 Google 登入</button>
+                            <button type="button" class="btn bg-neutral-100 w-100">
+                                <img src="../assets/images/icons-facebook.png">
+                                使用 Facebook 登入</button>
+                            <div class="d-flex justify-content-center mt-4 mt-lg-5">
+                                <p class="fw-semibold me-2">還未成為會員？</p><a href="signup.html">點此註冊</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <%- include('./layout/footer'); -%>
+
+            <script type="module" src="../main.js"></script>
+</body>
+
+</html>

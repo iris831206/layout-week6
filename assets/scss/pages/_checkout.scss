@@ -1,0 +1,27 @@
+.checkout {
+    padding: 60px 0;
+
+    @include media-breakpoint-up(lg) {
+        padding: 100px 0;
+    }
+
+    .card {
+        background-color: $white;
+
+    }
+
+    .input-group {
+        .btn {
+            background-color: $gray-100;
+            border-color: $gray-200;
+
+            &:hover,
+            &:active,
+            &.active,
+            &.focus {
+                background-color: $gray-300;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.banner {
+  &-content {
+    background-image: url(../assets/images/banner-sm.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include media-breakpoint-up(lg) {
+      background-image: url(../assets/images/banner.png);
+      padding: 60px;
+    }
+  }
+
+  &-title {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-up(lg) {
+      position: absolute;
+      top: 50%;
+      bottom: auto;
+    }
+  }
+}

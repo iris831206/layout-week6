@@ -1,0 +1,65 @@
+.subscribe {
+    padding: 60px 0;
+
+    @include media-breakpoint-up(lg) {
+        padding: 100px 0;
+    }
+
+    .payment {
+        .btn {
+            padding: 12px 80px;
+            background-color: $body-bg;
+            color: $secondary;
+
+            &:hover,
+            &:active,
+            &.active,
+            &.focus {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+    }
+
+    .card {
+        background-color: $white;
+
+        .card-body {
+            color: $secondary;
+            border-radius: $border-radius-larger;
+        }
+
+        &:hover,
+        &:active,
+        &.active,
+        &.focus {
+            border-color: $primary;
+
+            .price {
+                color: $neutral-300;
+
+                span {
+                    color: $primary;
+                }
+            }
+        }
+
+        .btn {
+            color: $secondary;
+            background-color: $neutral-100;
+
+            &:hover,
+            &.active {
+                color: $white;
+                background-color: $primary;
+            }
+
+            &:active,
+            &.focus {
+                color: $white;
+                background-color: $accent-300;
+            }
+        }
+    }
+
+}

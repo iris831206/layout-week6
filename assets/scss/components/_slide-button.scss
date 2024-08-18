@@ -1,0 +1,20 @@
+.slide-button {
+    padding: 4px 16px;
+    width: 56px;
+    height: 32px;
+    position: relative;
+    .bi {
+      position: absolute;
+      top: 50%;
+    }
+  }
+  
+  .slide-button-line {
+    width: 80px;
+    height: 1px;
+    border-bottom: $secondary solid 1px;
+    opacity: 1;
+    top: 0%;
+    bottom: auto;
+  
+  }

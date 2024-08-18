@@ -1,0 +1,26 @@
+.read-more {
+    .card-text {
+        @include media-breakpoint-up(lg) {
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // 限制顯示兩行
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+.article-content {
+    .gradient-overlay {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(255, 253, 245, 0), rgba(255, 253, 245, var(--overlay-opacity, 1)));
+            transition: background 0.3s ease;
+        }
+    }
+}

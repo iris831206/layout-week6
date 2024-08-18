@@ -1,0 +1,28 @@
+$lg-btn-padding-y: 1rem; //16px
+$lg-btn-padding-x: 1.5rem; //24px
+
+.btn.btn-primary {
+
+  &:hover,
+  &:active,
+  &.active,
+  &.focus {
+    background-color: $accent-300;
+    border-color: $accent-300;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-top: $lg-btn-padding-y;
+    padding-bottom: $lg-btn-padding-y;
+    padding-left: $lg-btn-padding-x;
+    padding-right: $lg-btn-padding-x;
+  }
+}
+
+.btn.btn-primary {
+  &:disabled {
+    background-color: $neutral-200;
+    border-color: $neutral-200;
+    color: $white;
+  }
+}
