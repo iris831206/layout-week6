@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+  <script type="module" crossorigin src="/layout-week6/assets/all-40195cfe.js"></script>
+  <link rel="stylesheet" href="/layout-week6/assets/all-80899c3a.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transition">
+  <div class="container-fluid container-md py-lg-4">
+    <a class="navbar-brand fs-2" href="index.html">Vivre</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="d-flex" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control border-end-0" placeholder="search" aria-label="search"
+            aria-describedby="basic-addon1">
+          <span class="input-group-text border-start-0 bg-transition" id="basic-addon1"><a href="#"><i
+                class="bi bi-search text-primary"></i></a></span>
+        </div>
+      </form>
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active me-3" aria-current="page" href="blog.html">所有文章</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-3" href="subscribe.html">訂閱專案</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link me-3" href="about.html">關於我們</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-primary text-white" href="login.html">登入 / 註冊</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  </div>
+</nav>        <section class="login">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-10">
+                        <div class="card border-neutral-200 bg-white">
+                            <h4 class="text-primary mb-4 mb-lg-5">登入</h4>
+                            <form class="needs-validation" novalidate>
+                            <div class="mb-3">
+                                <label for="inputAccount" class="form-label fw-bold mb-2">會員帳號</label>
+                                <input type="text" class="form-control" id="inputAccount"
+                                    placeholder="請輸入會員帳號">
+                            </div>
+                            <div class="mb-4 mb-lg-5">
+                                <label for="inputPassword" class="form-label fw-bold mb-2">會員密碼</label>
+                                <input type="password" class="form-control" id="inputPassword"
+                                    placeholder="請輸入密碼">
+                            </div>
+                        </form>
+                            <button type="submit" class="btn btn-primary text-white w-100 mb-5">
+                                立即登入<i class="bi bi-arrow-right ms-2"></i>
+                            </button>
+                            <div class="d-flex justify-content-between w-100">
+                                <div class="line"></div>
+                                <p
+                                    class="text-neutral-300 fw-semibold mb-4 mb-lg-5 text-center text-nowrap translate-middle-y mx-3">
+                                    或以其他方式登入</p>
+                                <div class="line"></div>
+                            </div>
+
+                            <button type="button" class="btn bg-neutral-100 w-100 mb-2">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGySURBVHgBtZM/T8JAGMafa4kQHSSMTCXRxMRBMK5GOjqYlNFJ/QAmTqyIg3HzIwCLjnQwrpToZqJFXRyMXYxOSmQAIuV8j9YGShv/RJ/k7tr33v7e5/4U+COxsAmeRRw2NMpQBgEJJvUmM2B9C+QCDulxE8EqQ0bRD2Q+iII+auCui3AZ7AzqcCDyBcSgUg0amxRfoTFLzSJHW36yB8KiXMCF/QkRH+bYOYGGHS/TnsnB+zRYGq/FFEj8AZc2cEqtw3NkXccP5DiS+2lwJlwBc7LBVrsjkGS+sRsGYJGI/rg/bzogLqWpc2YmWd2fzMEKYSD0eqI3pfEZHscv5DhitHmuodv3xALwNJLEwIsYdbhBgzJ4kZnp5IiJGl1CKfp63J7FUXtGhNSTnG4EVU7mrzWqWfWgkp16PshYg6UxFc291lLFhQhV16qa5odkSztZGkqeU4aygHiOhLSqFqeDv+LwXUigTknTFE8LVusthfu7ddh21OKsr46BXJhCsJoPNqZuJ2HdNLY9iNDIqek53aKbpBK9EgYRy5mKvWSGIWOOAtyl3SXRbwhrgmpRsSb+Ux8DMpnpdyeTfAAAAABJRU5ErkJggg==">
+                                使用 Google 登入</button>
+                            <button type="button" class="btn bg-neutral-100 w-100">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFtSURBVHgBvVO9SsRAEJ7d5OQKD9MdJ4gRfABLKznxAbTTVvEKnyLJA1hfcYpoZ2djf/oE2sqBsTEICgFF1Euyzk6SY/N3P819ELIz+fbb2ZkvAPNC/cIz5TOJx8qSes9rCxAWgNjA0EjSPrJvahp3fg5b7kQh3vMsBpENYyCA21Gn5VQKVYkYCxxWG5zWjx9BqdhIqN71zKEePedFds06nG8ZJCaxfv0G7meYbI62g85KX671dMOwFll4TAGnm0skcvX0De5XCP6vUK6oYR8hK4TZPSi5krmo0fro3i+eEg+DENfbpfEaRaHSoWYoqTX0KsZgvwlmQxvFwfEyvfWz11J+XNEJ+SJT+wv2I22qhFzfeX/5/X7qKaUi9oB3bqfRzu079Wdw0KRYTqsANGi2IsqFDsyIEF1eEJJ+QF9MLUZc5Vfh6kcUs6cRkxzJVXM8T5KEMOBr2K9Lzpk6AJ8x1k/cbMOsEEKY8oF54R/eZYMUmIQwhAAAAABJRU5ErkJggg==">
+                                使用 Facebook 登入</button>
+                            <div class="d-flex justify-content-center mt-4 mt-lg-5">
+                                <p class="fw-semibold me-2">還未成為會員？</p><a href="signup.html">點此註冊</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+    <div class="container py-lg-4 py-3">
+        <p class="text-center text-gray-800 fw-semibold">©Vivre 2024 All right Reserved</p>
+    </div>
+</footer>
+            
+</body>
+
+</html>
