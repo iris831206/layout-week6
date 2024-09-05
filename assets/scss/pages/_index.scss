@@ -1,3 +1,8 @@
+.selected-articles {
+  .card {
+    max-width: 500px;
+  }
+}
 .sales-campaign {
   background-color: $primary-200;
   /* 裝飾圖片使用偽元素做定位 */
@@ -42,7 +47,6 @@
 }
 
 .everyone-watch {
-
   .list-group {
     display: flex;
     flex-direction: row;
