@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <%- include('./layout/header'); -%>
+  <%- include('./layout/header', {page: 'blog' }); -%>
     <section class="article-banner">
       <div class="container">
         <picture>
@@ -75,9 +75,9 @@
               <source media="(min-width: 992px)" srcset="../assets/images/content-2.png">
               <img class="img-fluid w-100 mb-4 mb-lg-5" src="../assets/images/content-2-sm.png" alt="">
             </picture>
-            <div class="badge text-primary-400 bg-primary-300 me-3">#秘境尋蹤</div>
-            <div class="badge text-primary-400 bg-primary-300 me-3">#露營點</div>
-            <div class="badge text-primary-400 bg-primary-300">#山人</div>
+            <a href="#" class="badge text-primary-400 bg-primary-300 me-3">#秘境尋蹤</a>
+            <a href="#" class="badge text-primary-400 bg-primary-300 me-3">#露營點</a>
+            <a href="#" class="badge text-primary-400 bg-primary-300">#山人</a>
           </div>
         </div>
       </div>
